@@ -1,0 +1,21 @@
+if(!$(window).ready()===null){
+        $(".external-loader").addClass("d-none").removeClass("d-flex")
+        $(".external-loader").hide(500)
+    }else{
+        $(".external-loader").addClass("d-flex").removeClass("d-none")
+        $(".external-loader").show(500)
+    }
+
+
+    $(document).ajaxStart(function () {
+        $(this).addClass("d-block").removeClass("d-none");
+        console.log("load")
+})
+$(document).ajaxStop(function () {
+        $(this).addClass("d-none").removeClass("d-block");
+        console.log("finish")
+});
+
+
+
+inputValid(nameRegex,$("#username")) &&inputValid(emailRegex,$("#email")) &&inputValid(phoneRegex,$("#phone")) && inputValid(ageRegex,$("#age"))&& inputValid(passRegex,$("#pass"))&&inputValid(passRegex,$("#rePass"))

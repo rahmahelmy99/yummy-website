@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ! font awesome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!-- ! bootstrap icons -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- ! main stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- ! media quary (responsive) -->
+    <link rel="stylesheet" href="./assets/css/media.css" />
+  </head>
+  <body>
+    <div
+      id="loader"
+      class="external-loader my-auto d-none justify-content-center align-items-center position-fixed"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <div
+      id="loader2"
+      class="internal-loader my-auto d-none justify-content-center align-items-center position-fixed end-0 top-0 bottom-0"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <!-- ~ all meals section-->
+    <div class="meals-section section m-0 p-0 d-none mb-5" id="meals">
+      <div class="container w-100">
+        <div class="row d-flex flex-row pt-5 g-4"></div>
+      </div>
+    </div>
+    <!-- ~ slide bar -->
+    <div class="side-bar d-flex flex-row fixed-top vh-100">
+      <div class="hidden-part d-flex flex-column justify-content-between">
+        <ul class="slide-links list-unstyled lh-lg mt-3 pt-1 position-relative">
+          <li class="mt-2 ms-4 position-relative">
+            <a
+              href="#search"
+              class="text-decoration-none text-white"
+              id="search"
+              >Search</a
+            >
+          </li>
+          <li class="mt-2 ms-4 position-relative">
+            <a href="#" class="text-decoration-none text-white" id="categories"
+              >Categories</a
+            >
+          </li>
+          <li class="mt-2 ms-4 position-relative">
+            <a href="#" class="text-decoration-none text-white" id="areas"
+              >Area</a
+            >
+          </li>
+          <li class="mt-2 ms-4 position-relative">
+            <a href="#" class="text-decoration-none text-white" id="ingrediants"
+              >Ingrediants</a
+            >
+          </li>
+          <li class="mt-2 ms-4 position-relative">
+            <a href="#" class="text-decoration-none text-white" id="contactUs"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <div class="footer mb-3 pb-1">
+          <div class="icons ms-4 icon">
+            <i class="fa-brands fa-facebook text-white fs-6"></i>
+            <i class="fa-brands fa-twitter text-white fs-6"></i>
+            <i class="fa-solid fa-globe text-white fs-6"></i>
+          </div>
+          <p class="ms-4 text-white">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="appeared-part bg-white d-flex flex-column justify-content-between align-items-center"
+      >
+        <div
+          class="logo d-flex justify-content-center align-items-center mt-3 pt-2"
+        >
+          <img src="./assets/imgs/logo.png" alt="logo" class="w-75" />
+        </div>
+        <div class="toggle-icon icon w-100 text-center">
+          <i class="fa-solid fa-align-justify fs-2 text-black open w-100"></i>
+          <i class="fa-solid fa-x fs-2 text-black d-none close w-100"></i>
+        </div>
+        <div class="unused-icon text-center d-flex flex-column mb-3 pb-2 w-100">
+          <i class="fa-solid fa-globe fs-6 text-black mb-1 icon"></i>
+          <i class="fa-solid fa-share-nodes text-black icon"></i>
+        </div>
+      </div>
+    </div>
+    <!-- ~ search section -->
+    <section class="search-section section d-none mb-5" id="">
+      <div class="container w-100 pt-3 d-flex flex-column">
+        <div
+          class="row gx-4 d-flex flex-row justify-content-center mt-2 w-100 p-0"
+        >
+          <div class="col-12 col-md-6 col-xl-5">
+            <input
+              type="text"
+              placeholder="Search By Name"
+              class="SearchByName form-control ps-3 text-white w-100"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-xl-5">
+            <input
+              type="text"
+              placeholder="Search By First Letter"
+              class="SearchByFirstL form-control ps-3 text-white w-100"
+              maxlength="1"
+            />
+          </div>
+        </div>
+        <div class="row row2 d-flex flex-row mt-5 g-4 p-0"></div>
+      </div>
+    </section>
+    <!-- ~ categories section -->
+    <section id="" class="categories-section section d-none" id="">
+      <div class="container w-100 pb-5">
+        <div class="row d-flex flex-row pt-5 g-4 h-100"></div>
+      </div>
+    </section>
+    <!-- ~ area section  -->
+    <section class="area-section section d-none" id="">
+      <div class="container w-100">
+        <div class="row d-flex flex-row pt-5 g-4"></div>
+      </div>
+    </section>
+    <!-- ~ ingrediants sections -->
+    <section class="ingrediants-section section d-none mb-5" id="">
+      <div class="container w-100">
+        <div class="row d-flex flex-row pt-5 g-4"></div>
+      </div>
+    </section>
+    <!-- ~ meal Instructions-->
+    <section class="details-section section w-100 d-none" id="">
+      <div class="container bg-transparent"></div>
+    </section>
+    <!-- ~ contact us section -->
+    <section class="contact-section section vh-100 d-none">
+      <div
+        class="container h-100 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="form form-control d-flex flex-column justify-content-center align-items-center mt-3 bg-transparent border border-0"
+        >
+          <div class="row d-flex mt-5 g-4 w-75">
+            <div class="col-12 col-md-6">
+              <input
+                id="username"
+                type="text"
+                name="username"
+                placeholder="Enter Your Name"
+                class="form-control"
+              />
+              <p
+                class="errorP alert alert-danger col-12 mt-2 text-center d-none"
+                id="nameError"
+              >
+                Special characters and numbers not allowed
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                class="form-control"
+              />
+              <p
+                class="errorP alert alert-danger col-12 mt-2 text-center d-none"
+                id="emailError"
+              >
+                Email not valid *exemple@yyy.zzz
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="Enter Your Phone"
+                class="form-control"
+              />
+              <p
+                class="errorP alert alert-danger col-12 mt-2 text-center d-none"
+                id="phoneError"
+              >
+                Enter valid Phone Number
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <input
+                id="age"
+                type="number"
+                name="age"
+                placeholder="Enter Your Age"
+                class="form-control"
+              />
+              <p
+                class="alert alert-danger col-12 mt-2 text-center d-none"
+                id="ageError"
+              >
+                Enter valid age
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <input
+                id="pass"
+                type="password"
+                name="pass"
+                placeholder="Enter Your Password"
+                class="form-control"
+              />
+              <p
+                class="errorP alert alert-danger col-12 mt-2 text-center d-none"
+                id="passError"
+              >
+                Enter valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <input
+                id="rePass"
+                type="password"
+                name="pass"
+                placeholder="Repassword"
+                class="form-control"
+              />
+              <p
+                class="errorP alert alert-danger col-12 mt-2 text-center d-none"
+                id="repassError"
+              >
+                Enter valid repassword
+              </p>
+            </div>
+          </div>
+          <button
+            id="#disableBtn"
+            type="submit"
+            class="btn btn-danger mt-3 px-2 py-2 rounded-2 disabled"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
