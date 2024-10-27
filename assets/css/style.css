@@ -11,7 +11,7 @@ body {
   /* overflow: hidden; */
 }
 .external-loader {
-  opacity: 1;
+  opacity: 0;
   background-color: var(--main-color) !important;
   z-index: 999999999;
   i {
