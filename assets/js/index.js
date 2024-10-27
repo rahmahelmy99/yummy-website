@@ -59,7 +59,12 @@ async function getData(endPoint){
 
 
 async function getDefaultMeals(){
+    $("#loader").fadeIn(300,()=>{
+        $("#loader").toggleClass("d-none","d-flex")
+    })
     let mealsData = await getData(`search.php?s=`)
+    $("#loader").toggleClass("d-flex","d-none")
+    $("#loader").fadeOut(300)
     let meals = mealsData.meals;
     displayMeals(meals,25)
     
